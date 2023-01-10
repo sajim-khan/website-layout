@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Layout</title>
+    <title>Explore Flexbox</title>
+    <style>
+        .container{
+            border: 2px dashed black;
+            display: flex;
+            align-items: stretch; 
+            height: 300px;
+            /*justify-content:space-evenly;   /* for Horizontally*/
+            /*height: 300px;
+            flex-direction:row;
+            flex-wrap: wrap;
+            align-items: center;*/ /* for vertically */
+            /*flex-direction: column/ column-reverse /row-reverse; */ 
+        }
+        .box{
+            border: 2px dashed peru;
+            width: 100px;
+            /*height: 100px;*/
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">Box -1</div>
+        <div class="box">Box -2</div>
+        
+    </div>
 </body>
 </html>
